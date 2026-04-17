@@ -1,6 +1,14 @@
 @use 'partial'; /*Partial fil hentes ind i style.scss som et modul*/
 /*Filen er en samling af variabler, mixins og funktioner, som kan genbruges*/
 
+/*!!!HVORDAN MAN KALDER!!!*//*
+    1) Kalder med #, hvis vi kalder på et id      --> EKSEMPEL: ""
+    2) Kalder med ":", hvis ??? --> EKSEMPEL: ""
+    3) Kalder med ".", hvis vi kalder på en class --> EKSEMPEL: ""
+    4) Kalder med "@", hvis ???                   --> EKSEMPEL: ""
+*/
+
+
 //Generel styling
  
 body{
@@ -64,4 +72,30 @@ body{
     height: 4em;
     padding: 1em;
     @include partial.flex($justify: space-between); /*Mixin er blevet kaldt og $justify variablen er ændret (før var den "center")*/
+        img{
+            width: 70px;
+        }
+
+        #bars{ /*Kalder med #, da det er et id, vi kalder på*/
+            display: none;
+        }
+
+        ul{
+            @include partial.flex;
+            list-style-type: none;
+        }
+
+        a{
+            color: partial.$text-color;
+            padding: 0.5em;
+            margin: 0.5em;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover .active{ 
+            color: partial.$primary-color;
+        }
+
   }
