@@ -1,1 +1,12 @@
-/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/*========VARIABLER========*/
+/*----FARVER----*/
+/*----FONTS----*/
+/*Variabler deklareres i toppen af vores stylesheet, og de er globale*/
+/*Variabler defineret i blokke ({}) er normalvis lokale og kan kun tilgås inden i blokken*/
+/*----MIXIN----*/
+/*Mixin er en måde at genbruge kode på*/
+/*Vi kan tage kode, som bruges flere steder og samle det i en mixin*/
+/*$justify og $align er parametre/variabler, som kan ændre, når vores mixin kaldes*/
+/*Partial fil hentes ind i style.scss som et modul*/
+/*Filen er en samling af variabler, mixins og funktioner, som kan genbruges*//*# sourceMappingURL=style.css.map */
