@@ -99,3 +99,31 @@ body{
         }
 
   }
+
+  /*========HEADER BANNER========*/
+  .header-img{
+    grid-column: 1/6;
+    background-image: url(../img/computer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    margin-bottom: 1em;
+    border-bottom: 4px solid partial.$primary-color;
+
+      .banner-tekst{
+        position: absolute;
+        left: 5%;
+        top: 35%;
+
+        h1{
+          font-size: 3.5vw;
+        }
+
+        p{
+          font-size: 2vw;
+        }
+
+        
+      }
+  }
