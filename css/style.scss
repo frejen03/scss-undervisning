@@ -114,7 +114,7 @@ body{
       .banner-tekst{
         position: absolute;
         left: 5%;
-        top: 35%;
+        top: 30%;
 
         h1{
           font-size: 3.5vw;
@@ -124,6 +124,26 @@ body{
           font-size: 2vw;
         }
 
-        
+        a{
+          @include partial.btn;
+          position: absolute;
+
+          &:hover{
+            background-color: partial.$secondary-color;
+            transition: 0.3s ease-in-out;
+          }
+        }
       }
+  }
+
+  /*FORSIDE MAIN STYLING*/
+
+  main {
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta-wrapper{
+    grid-column: 1/7;
   }

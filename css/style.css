@@ -115,11 +115,35 @@ nav a:hover .active {
 .header-img .banner-tekst {
   position: absolute;
   left: 5%;
-  top: 35%;
+  top: 30%;
 }
 .header-img .banner-tekst h1 {
   font-size: 3.5vw;
 }
 .header-img .banner-tekst p {
   font-size: 2vw;
+}
+.header-img .banner-tekst a {
+  background-color: #388071;
+  padding: 0.8em 1em;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  position: absolute;
+}
+.header-img .banner-tekst a:hover {
+  background-color: #133833;
+  transition: 0.3s ease-in-out;
+}
+
+/*FORSIDE MAIN STYLING*/
+main {
+  grid-column: 1/6;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.cta-wrapper {
+  grid-column: 1/7;
 }/*# sourceMappingURL=style.css.map */
