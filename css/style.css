@@ -146,4 +146,41 @@ main {
 
 .cta-wrapper {
   grid-column: 1/7;
+}
+.cta-wrapper h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.cta-wrapper .cta-bokse {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*CTA BOKSE*/
+.cta-1, .cta-2, .cta-3 {
+  background-color: #ffffff;
+  width: 20vw;
+  padding: 2em;
+  margin: 2em auto;
+}
+.cta-1 img, .cta-2 img, .cta-3 img {
+  margin: 0 auto;
+  width: 60%;
+  display: block;
+}
+.cta-1 p, .cta-2 p, .cta-3 p {
+  margin-bottom: 2em;
+}
+.cta-1 a, .cta-2 a, .cta-3 a {
+  background-color: #388071;
+  padding: 0.8em 1em;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+.cta-1 a:hover, .cta-2 a:hover, .cta-3 a:hover {
+  background-color: #133833;
+  transition: 0.3s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
